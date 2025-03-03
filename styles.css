@@ -3,27 +3,40 @@ body {
   background-color: #F7FAF8;
 }
 
-div.container {
+:root {
+  --btn-width: 222px;
+  --btn-height: 122px;
+}
+
+div {
+  align-content: center;
+  text-align: center;
+}
+
+.container {
   display: inline-block;
   padding: 40px;
-  align-content: center;
 }
 
-.title {
-  display: inline;
-  align-content: center;
+.invite {
+  display: block;
+  width: auto;
+  height: fit-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.btn-ute {
+.btn {
   display: inline-block;
+  height: var(--btn-height);
+  width: var(--btn-width);
   margin: 10px;
-  background-color: #3399FF;
-  height: 122px;
-  width: 222px;
   border-radius: 15px;
   border: 3px solid #FFFF99;
   box-shadow: 0 9px #999;
 }
+
+.btn-ute { background-color: #3399FF; }
 
 .btn-ute:hover { background-color: #075AAD; }
 
@@ -33,16 +46,7 @@ div.container {
   transform: translateY(4px);
  }
 
-.btn-bff {
-  display: inline-block;
-  margin: 10px;
-  background-color: purple;
-  height: 122px;
-  width: 222px;
-  border-radius: 15px;
-  border: 3px solid #FFFF99;
-  box-shadow: 0 9px #999;
-}
+.btn-bff { background-color: purple; }
 
 .btn-bff:hover { background-color: #E376E3; }
 
@@ -52,58 +56,54 @@ div.container {
   transform: translateY(4px);
  }
 
-p.large-font {
+.caption {
+  width: var(--btn-width);
+  height: var(--btn-height);
+}
+
+p {
   font-family: "Open Sans";
+  position: relative;
+  top: 0px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.small-font {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFF99;
+}
+
+.large-font {
   font-size: 2rem;
   font-weight: 600;
   color: #FFFFFF;
-  text-align: center;
-  position: relative;
-  top: -30px;
 }
 
-p.small-font {
-  font-family: "Open Sans";
-  font-size: 1rem;
-  color: #FFFF99;
-  text-align: center;
-  position: relative;
-  top: 0px;
-}
-
-p.small-bottom {
-  font-family: "Open Sans";
-  font-size: 1rem;
-  color: #FFFF99;
-  text-align: center;
-  position: relative;
-  top: -60px;
-}
 h1 {
-  font-size: 2.5rem;
   color: #0b598d;
   font-family: "Charm";
-  font-weight: 400;
   font-size: 48px;
+  font-weight: 400;
   text-align: center;
   text-shadow: 4px 4px 4px #bbb;
-  inline-size: 420px;
-  padding-left: 30px;
+  width: auto;
+  height: auto;
+  margin: 0;
 }
 
-a { text-decoration: none; }
-
-.flag {
-  width: 80px;
+a { 
+  height: auto;
+  width: var(--btn-width);
+  text-decoration: none; 
 }
 
-.flag-de {
-  width: 90px;
-}
+.flag-de { width: 90px; }
 
-.flag-pt {
-  width: 80px;
-}
+.flag-pt { width: 80px; }
 
 footer {
   color: #DBEDF3;
