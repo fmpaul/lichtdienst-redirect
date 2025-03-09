@@ -28,12 +28,17 @@ div {
 
 .btn {
   display: inline-block;
-  height: var(--btn-height);
+  height: inherit;
   width: var(--btn-width);
   margin: 10px;
   border-radius: 15px;
   border: 3px solid #FFFF99;
   box-shadow: 0 9px #999;
+}
+
+#season { 
+/*  display: none; /* kein Feiertag */
+  display: inline-block; /* kommender Feiertag */
 }
 
 .btn-ute { background-color: #3399FF; }
@@ -57,14 +62,14 @@ div {
  }
 
 .caption {
-  width: var(--btn-width);
   height: var(--btn-height);
+  width: var(--btn-width);
 }
 
 p {
   font-family: "Open Sans";
   position: relative;
-  top: 0px;
+  top: 0;
   width: auto;
   height: auto;
   margin: 0;
@@ -75,12 +80,16 @@ p {
   font-size: 1rem;
   font-weight: 400;
   color: #FFFF99;
+  height: 22px;
+  top: 0;
 }
 
 .large-font {
   font-size: 2rem;
   font-weight: 600;
   color: #FFFFFF;
+  height: 44px;
+  top: 0px;
 }
 
 h1 {
@@ -97,7 +106,7 @@ h1 {
 
 a { 
   height: auto;
-  width: var(--btn-width);
+  width: inherit;
   text-decoration: none; 
 }
 
@@ -115,3 +124,10 @@ footer {
   opacity: 0.5;
 }
 
+header.top_panel_wrap.top_panel_style_2.scheme_blue.menu_show {
+    display: none;
+}
+
+.header_mobile {
+    display: none !important;
+}
